@@ -51,11 +51,13 @@ A general purpose robot simulation platform. Built on Unity, MuJoCo and ROS2. We
 		  ```
 		- 注意如果报错某package not found或import error，很有可能是没有一开始就关闭conda环境，可以尝试删除除src以外所有生成文件重新构建。
 	- Unity端插件安装
+		
+		- 将项目目录下的MuJoCo.zip复制至用户目录（Windows：C:/Users/<UserName>）并解压，文件夹命名为`MuJoCo`
 		- 安装ROS-TCP-Connector（Unity端插件）
-			- 在unity package manager中选择`install from git`并填入链接`https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector`
+		  - 在unity package manager中选择`install from git`并填入链接`https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector`
 		- 安装URDF-Importer
-			- 官方教程：[Importing a Niryo One Robot using URDF Importer](https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/urdf_importer/urdf_tutorial.md)
-			- 在unity package manager中选择`install from git`并填入链接`https://github.com/Unity-Technologies/URDF-Importer.git?path=/com.unity.robotics.urdf-importer#v0.5.2`，v0.5.2为版本号，请注意选择。
+		  - 官方教程：[Importing a Niryo One Robot using URDF Importer](https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/urdf_importer/urdf_tutorial.md)
+		  - 在unity package manager中选择`install from git`并填入链接`https://github.com/Unity-Technologies/URDF-Importer.git?path=/com.unity.robotics.urdf-importer#v0.5.2`，v0.5.2为版本号，请注意选择。
 - ## 增加模块
 	- 在`<workspace>/src/unity_robotics_demo/unity_robotics_demo/`目录下添加新publisher，如`h1_control_publisher.py`
 	- 更改`<workspace>/src/unity_robotics_demo/setup.py`，在`entry_points`字段下以
@@ -90,4 +92,4 @@ A general purpose robot simulation platform. Built on Unity, MuJoCo and ROS2. We
 	  ./start_ros_tcp_endpoint.sh 
 	  ./start_h1_publisher.sh
 	  ```
--
+	  -
