@@ -8,6 +8,22 @@ A general purpose robot simulation platform. Built on Unity, MuJoCo and ROS2. We
 
 [GitHub Repo](https://github.com/webDrag0n/MorpheusROS2EndPoint)
 
+## Status
+
+- ### Roadmap
+	- ✅ MuJoCo
+		- Unity端插件部署完成：((66f11252-eeb3-43d1-8b00-d9f84883f836))
+	- ✅ [[Unitree MuJoCo]]
+		- 部署完成
+	- ✅ [[Unitree sdk2]] [[Unitree sdk2 python]]
+	- ✅ ML-Agent
+	- ✅ ROS Plugin：Unity-Robotics-Hub
+		- ROS2（foxy）与Unity通信完成测试，相关过程记录在 [[Unity-Robotics-Hub]]
+	- ▶️ Isaac Sim RL Sim2Sim测试
+		- 环境部分部署完成，但是还有缺失依赖待解决
+	- ▶️Hololens 2 连接Unity
+		- Microsoft-MRTK3.0 OpenXR技术栈
+
 ## How to build
 
 - #Unity #机器人仿真
@@ -92,4 +108,3 @@ A general purpose robot simulation platform. Built on Unity, MuJoCo and ROS2. We
 	  ./start_ros_tcp_endpoint.sh 
 	  ./start_h1_publisher.sh
 	  ```
-	  -

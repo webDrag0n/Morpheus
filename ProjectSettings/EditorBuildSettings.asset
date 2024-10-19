@@ -8,4 +8,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/humanoid.unity
     guid: 99c9720ab356a0642a771bea13969a05
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: b61d2e4bfa0b3a34b801dd301987e31c,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: a2b23c4c964d2c84286a49bb23d63265,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: d128b873517cfa64a8cb8650976c7875,
+      type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: f90d23b51dfb1754faf6f90929f237fc,
+      type: 2}
