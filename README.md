@@ -2,7 +2,7 @@
 
 ## Introduction
 
-A general purpose robot simulation platform. Built on Unity, MuJoCo and ROS2. We aim to develop a state-of-the-art level human-robot interaction interface by utilizing Hololens2 and Meta Quest 2, supported by Unity platform. Allowing researchers to build better human-robot collaboration behavior dataset.
+**本项目的目标是开发一个专注于人-机协同任务的机器人仿真环境**，集成ROS（Robot Operating System）、Unity和MuJoCo的仿真平台，具备高精度的物理仿真、灵活的环境建模、传感器模拟以及基于大语言模型的AI动作绑定和人机协作。通过容器化简化部署，并集成Hololens 2进行场景可视化和人体动作捕捉。该平台还支持通过照片生成场景并扩展类似场景，以及优化人机协作的数据集生成流程。
 
 ## ROS2 EndPoint Interface
 
