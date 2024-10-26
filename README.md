@@ -8,9 +8,11 @@
 
 ![Morpheus关键组件](README.assets/Morpheus关键组件.png)
 
-## ROS2 EndPoint Interface
+## Morpheus Backend
 
-[GitHub Repo](https://github.com/webDrag0n/MorpheusROS2EndPoint)
+Current repo is the frondend module, it needs to be paired with backend module to have ros2-humble connectivity.
+
+[Morpheus Backend GitHub Repo](https://github.com/webDrag0n/MorpheusBackend)
 
 ## Status
 
