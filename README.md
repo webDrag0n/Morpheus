@@ -39,7 +39,7 @@ Current repo is the frondend module, it needs to be paired with backend module t
 	-
 	  ```bash
 	  docker load -i morpheus_backend.tar
-	  docker run --name morpheus --gpus all -it --shm-size=16g --rm -v /mnt/j/DockerDirs/morpheus/:/root -p 10000:10000 morpheus:v0.1
+	  docker run --name morpheus_backend --gpus all -it --shm-size=16g --rm -v /mnt/j/DockerDirs/morpheus/:/root -p 10000:10000 morpheus_backend:v1.0
 	  [press ctrl-p-q to detach from container]
 	  docker ps -a # get docker container id
 	  docker exec -it [container_id] /bin/bash
@@ -51,11 +51,14 @@ Current repo is the frondend module, it needs to be paired with backend module t
 	  
 	  # Get Morpheus backend repo
 	  cd ~
-	  git clone https://github.com/webDrag0n/MorpheusROS2EndPoint.git
+	  git clone https://github.com/webDrag0n/MorpheusBackend.git
 	  cd MorpheusROS2EndPoint
 	  rm -r build # clean legacy builds
 	  
 	  # Build
+	  colcon build
+	  source install/setup.sh
+          # Must do it twice
 	  colcon build
 	  source install/setup.sh
 	  ```
