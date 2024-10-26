@@ -18,7 +18,7 @@ Current repo is the frondend module, it needs to be paired with backend module t
 
 - ### Roadmap
 	- ✅ MuJoCo
-		- Unity端插件部署完成：((66f11252-eeb3-43d1-8b00-d9f84883f836))
+		- Unity端插件部署完成
 	- ✅ [[Unitree MuJoCo]]
 		- 部署完成
 	- ✅ [[Unitree sdk2]] [[Unitree sdk2 python]]
@@ -52,7 +52,7 @@ Current repo is the frondend module, it needs to be paired with backend module t
 	  # Get Morpheus backend repo
 	  cd ~
 	  git clone https://github.com/webDrag0n/MorpheusBackend.git
-	  cd MorpheusROS2EndPoint
+	  cd MorpheusBackend
 	  rm -r build # clean legacy builds
 	  
 	  # Build
