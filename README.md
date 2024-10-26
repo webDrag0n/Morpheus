@@ -53,7 +53,8 @@ Current repo is the frondend module, it needs to be paired with backend module t
 	  cd ~
 	  git clone https://github.com/webDrag0n/MorpheusBackend.git
 	  cd MorpheusBackend
-	  rm -r build # clean legacy builds
+	  # pull submodules such as ROS-TCP-Endpoint
+   	  git submodule update --init --recursive
 	  
 	  # Build
 	  colcon build
