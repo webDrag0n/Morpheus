@@ -17,6 +17,7 @@ Current repo is the frondend module, it needs to be paired with backend module t
 ## Status
 
 - ### Roadmap
+- ## Roadmap
 	- ✅ MuJoCo
 		- Unity端插件部署完成
 	- ✅ [[Unitree MuJoCo]]
@@ -26,9 +27,16 @@ Current repo is the frondend module, it needs to be paired with backend module t
 	- ✅ ROS Plugin：Unity-Robotics-Hub
 		- ROS2（foxy）与Unity通信完成测试，相关过程记录在 [[Unity-Robotics-Hub]]
 	- ▶️ Isaac Sim RL Sim2Sim测试
-		- 环境部分部署完成，但是还有缺失依赖待解决
-	- ▶️Hololens 2 连接Unity
-		- Microsoft-MRTK3.0 OpenXR技术栈
+		- ✅ 环境部分部署完成
+		- ▶️ ROS2系统接入
+	- ▶️ Hololens 2 连接Unity
+		- ✅ Microsoft-MRTK3.0 OpenXR技术栈部署完成
+		- ▶️ Hololens 2连接Unity（相机输出）
+		- ⏸️ Hololens 2手部输入反控仿真物体
+	- ⏸️ 动捕数据录制模块
+	- ⏸️ Unitree H1仿真数据录制模块
+	- ⏸️ Robomaster机器人MuJoCo模型
+
 
 ## How to build
 
