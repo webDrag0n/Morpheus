@@ -85,6 +85,7 @@ Current repo is the frondend module, it needs to be paired with backend module t
 		  pip install empy==3.3.2
 		  pip install catkin-pkg
 		  pip install lark
+    		  pip install pin
 		  ```
 	- 下载本仓库
 		-
