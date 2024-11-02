@@ -72,40 +72,33 @@ Current repo is the frondend module, it needs to be paired with backend module t
 	  source install/setup.sh
 	  ```
 - ## 手动安装
-	- Git：[官方Git页面](https://github.com/Unity-Technologies/Unity-Robotics-Hub)
-	- 首先使用[鱼香ROS](https://fishros.org.cn/forum/)教程安装ROS2-foxy桌面版环境，如遇到问题也可改为安装基础版，但是桌面版有更全面的功能，对于其他ROS2开发可能有用。
-		- [一键安装教程](https://fishros.org.cn/forum/topic/20/%E5%B0%8F%E9%B1%BC%E7%9A%84%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E7%B3%BB%E5%88%97)
-		  ```bash
-		  wget http://fishros.com/install -O fishros && . fishros
-		  ```
-    ### 安装MorpheusBackend
-  	```bash
-   	git clone https://github.com/webDrag0n/MorpheusBackend.git
-   	```
-	- [安装ros_unity_integration与demo](https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros_unity_integration/setup.md)
-		  ```bash
-		  mkdir workspace_colcon
-		  cd workspace_colcon
-		  mkdir src
-		  cp -r ../ROS-TCP-Endpoint ../Unity-Robotics-Hub ./src
-    	 	  git clone https://github.com/Unity-Technologies/Unity-Robotics-Hub.git
-		  # 注意最后的branch指定参数
-		  git clone https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git -b main-ros2
-		  ```
-		- ros_tcp_endpoint目录下：
-		  ```bash
-		  # conda 环境会扰乱ros2引用
-		  conda deactivate
-		  
-		  # 一定要执行两次
-		  # --symlink-install 更快迭代
-		  colcon build --symlink-install
-		  source install/setup.bash
-		  colcon build --symlink-install
-		  source install/setup.bash
-		  ```
+	- 首先使用[鱼香ROS](https://fishros.org.cn/forum/)教程安装ROS2-foxy，桌面版或基础版环境皆可，但是桌面版有更全面的功能，对于其他ROS2开发可能有用。
+	- [一键安装教程](https://fishros.org.cn/forum/topic/20/%E5%B0%8F%E9%B1%BC%E7%9A%84%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85%E7%B3%BB%E5%88%97)
+	  ```bash
+	  wget http://fishros.com/install -O fishros && . fishros
+	  ```
+	- 重启终端
+	- 安装python3 em库
 		- 如安装过程中报`No module named 'em'`错误，请通过`pip3 install empy==3.3.2`安装`em`模块，⚠️注意版本号不对也有可能报错，其他缺少模块报错只需缺什么装什么即可。
-		- 测试
+		-
+		  ```bash
+		  pip install empy==3.3.2
+		  pip install catkin-pkg
+		  pip install lark
+		  ```
+	- 下载本仓库
+		-
+		  ```bash
+		  git clone https://github.com/webDrag0n/Morpheus.git
+		  # 拉取unity_robotics_demo_msgs
+		  git submodule update --init --recursive
+		  ```
+	- 删除build目录（如有）并执行：
+		-
+		  ```bash
+		  bash start_compile.sh
+		  ```
+	- 测试
 		  ```bash
 		  # conda 环境会扰乱ros2引用
 		  conda deactivate
