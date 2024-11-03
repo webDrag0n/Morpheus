@@ -29,6 +29,7 @@ Current repo is the frondend module, it needs to be paired with backend module t
 	- ▶️ Isaac Sim RL Sim2Sim测试
 		- ✅ 环境部分部署完成
 		- ✅ ROS2系统接入
+		- ▶️ 仿真环境机器人状态回传
 	- ▶️ Hololens 2 连接Unity
 		- ✅ Microsoft-MRTK3.0 OpenXR技术栈部署完成
 		- ✅ Hololens 2连接Unity
