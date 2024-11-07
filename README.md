@@ -16,7 +16,6 @@ Current repo is the frondend module, it needs to be paired with backend module t
 
 ## Status
 
-- ### Roadmap
 - ## Roadmap
 	- ✅ MuJoCo
 		- Unity端插件部署完成
@@ -25,18 +24,33 @@ Current repo is the frondend module, it needs to be paired with backend module t
 	- ✅ [[Unitree sdk2]] [[Unitree sdk2 python]]
 	- ✅ ML-Agent
 	- ✅ ROS Plugin：Unity-Robotics-Hub
-		- ROS2（foxy）与Unity通信完成测试，相关过程记录在 [[Unity-Robotics-Hub]]
+		- ROS2（foxy）与Unity通信完成测试
 	- ▶️ Isaac Sim RL Sim2Sim测试
 		- ✅ 环境部分部署完成
-		- ✅ ROS2系统接入
+		- ✅ 仿真环境机器人控制指令接收
 		- ▶️ 仿真环境机器人状态回传
+			- ROS2控制信号接收，状态信号发送
 	- ▶️ Hololens 2 连接Unity
 		- ✅ Microsoft-MRTK3.0 OpenXR技术栈部署完成
 		- ✅ Hololens 2连接Unity
-		- ⏸️ Hololens 2手部输入反控仿真物体
-	- ⏸️ 动捕数据录制模块
-	- ⏸️ Unitree H1仿真数据录制模块
+		- ⏸️ Hololens 2手部动捕信号回传
+		- ⏸️ Hololens 2相机信号回传
+	- ⏸️ Hololens 2手部输入反控仿真物体
+		- ⏸️ 手部及位置动捕数据
+			- ⏸️ 接收模块
+			- ⏸️ 录制模块
+		- ⏸️ Unity接收动捕+图像回传数据对齐
+	- ⏸️ 仿真数据录制模块
+		- Unitree H1
+		- Unitree Go2
+		- 四旋翼无人机
 	- ⏸️ Robomaster机器人MuJoCo模型
+	- ⏸️ Unity输出语义分割图
+		- ⏸️ SAM2？或者直接仿真直出
+	- ⏸️ 传感器仿真
+		- ⏸️ 相机（自然有，只需要接口）
+		- ⏸️ 激光雷达
+		- ⏸️ IMU（简单，只需要接口）
 
 
 ## How to build
@@ -150,3 +164,6 @@ Current repo is the frondend module, it needs to be paired with backend module t
 	  ./start_ros_tcp_endpoint.sh 
 	  ./start_h1_publisher.sh
 	  ```
+## Contributors
+
+@[webDrag0n](https://github.com/webDrag0n), @[Tsunami](https://github.com/panz1ha0)
